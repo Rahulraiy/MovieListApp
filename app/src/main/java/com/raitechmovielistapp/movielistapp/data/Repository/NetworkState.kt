@@ -1,0 +1,26 @@
+package com.raitechmovielistapp.movielistapp.data.Repository
+enum class Status{
+
+    RUNNING,
+    SUCCESS,
+    FAILED
+}
+class NetworkState(val status:Status,val msg:String) {
+
+
+    companion object{
+
+        val LOADED:NetworkState
+        val LOADING:NetworkState
+        val ERROR:NetworkState
+        val ERROR_LIst:NetworkState
+
+        init {
+
+            LOADED= NetworkState(Status.SUCCESS,"Success")
+            LOADING= NetworkState(Status.RUNNING,"Running")
+            ERROR=NetworkState(Status.FAILED,"Something went wrong")
+            ERROR_LIst=NetworkState(Status.FAILED,"You have Reach the End")
+        }
+    }
+    }

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.TopRatedMovie.TopRatedMovieFragment">
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:id="@+id/main_progressbar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:text="Connection Problem!!"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_topratedmovie_error"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_toprated_movie"
+        android:layout_margin="4dp"
+        android:scrollbars="vertical"
+        />
+
+</LinearLayout>
+</layout>

@@ -8,6 +8,8 @@ This is a movie list application. You can see both upcoming movie details and to
  Language: Kotlin
 
 Open-source libraries used:
+
+
 //live data and view Model
     implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
     //Recycle view and card view
